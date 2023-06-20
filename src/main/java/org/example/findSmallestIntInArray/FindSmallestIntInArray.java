@@ -1,9 +1,9 @@
-package org.example.findeSmallestIntInArray;
+package org.example.findSmallestIntInArray;
 
 import java.util.Arrays;
 
 public class FindSmallestIntInArray {
-    public static int findSmallestInt(int[] arr) {
+    public int findSmallestInt(int[] arr) {
         return Arrays.stream(arr)
                 .min()
                 .getAsInt();
