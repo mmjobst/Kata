@@ -1,4 +1,4 @@
-package org.example.kata01;
+package org.example.findeSmallestIntInArray;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -8,12 +8,13 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class KataOneTest {
+class FindSmallestIntInArrayTest {
 
     @ParameterizedTest
     @MethodSource("testCases")
     public void findSmallestIntTest(int[] arr, int expected){
-        int actual = KataOne.findSmallestInt(arr);
+        FindSmallestIntInArray finder = new FindSmallestIntInArray();
+        int actual = finder.findSmallestInt(arr);
         assertEquals(actual, expected);
     }
 
@@ -26,5 +27,4 @@ class KataOneTest {
                 Arguments.of(new int[]{0,Integer.MIN_VALUE,Integer.MAX_VALUE}, -Integer.MIN_VALUE)
         );
     }
-
 }
