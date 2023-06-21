@@ -27,7 +27,10 @@ class GetMiddleCharTest {
     private static Stream<Arguments> testCases(){
         return Stream.of(
                 Arguments.of("hallo", "l"),
-                Arguments.of("test", "es")
+                Arguments.of("test", "es"),
+                Arguments.of("testing", "t"),
+                Arguments.of("A", "A"),
+                Arguments.of("", null)
         );
     }
 }
