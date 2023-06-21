@@ -1,0 +1,1 @@
+# Kata from codewars.com
